@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.citytech.cst.client.sample.Property.PropertyController">
+   <children>
+      <TableView fx:id="tvPropertySummary" layoutX="27.0" layoutY="134.0" prefHeight="200.0" prefWidth="155.0">
+        <columns>
+          <TableColumn prefWidth="57.5" text="State" >
+              <cellValueFactory>
+                  <PropertyValueFactory property="state" />
+
+
+              </cellValueFactory>
+          </TableColumn>
+          <TableColumn prefWidth="92.5" text="netincome" >
+              <cellValueFactory>
+                  <PropertyValueFactory property="netincome" />
+              </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="27.0" layoutY="21.0" prefHeight="45.0" prefWidth="275.0" text="Query Data By State">
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
